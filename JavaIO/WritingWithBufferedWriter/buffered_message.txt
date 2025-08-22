@@ -1,0 +1,3 @@
+Java I/O is powerful.
+Buffered streams improve efficiency.
+Always close your resources.
