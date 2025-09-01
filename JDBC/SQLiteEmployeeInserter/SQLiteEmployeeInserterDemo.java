@@ -16,7 +16,6 @@ Print the number of rows inserted.
 🧪 Test Tip: After running, verify with an SQLite tool that rows are actually inserted.
 */
 
-import java.io.IOException;
 import java.sql.*;
 import java.util.*;
 
