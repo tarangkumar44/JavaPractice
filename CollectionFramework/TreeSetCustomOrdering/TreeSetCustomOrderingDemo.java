@@ -14,6 +14,7 @@ import java.util.Scanner;
 import java.util.TreeSet;
 
 class SortTreeSet implements Comparator<String> {
+    @Override
     public int compare(String ts1, String ts2){
         if(ts1.length() < ts2.length()){
             return -1;
@@ -64,3 +65,28 @@ public class TreeSetCustomOrderingDemo {
         }
     }
 }
+
+
+
+
+
+/*
+Improvements
+
+Comparator Simplification
+You can simplify your comparator by using Comparator.thenComparing:
+
+class SortTreeSet implements Comparator<String> {
+    @Override
+    public int compare(String ts1, String ts2) {
+        return Comparator
+                .comparingInt(String::length)
+                .thenComparing(Comparator.naturalOrder())
+                .compare(ts1, ts2);
+    }
+}
+
+
+✅ Cleaner and uses modern Java style.
+
+*/
