@@ -64,7 +64,7 @@ class StudentDetails {
     public void printUsingValues(){
         System.out.println("Printing using values(): ");
         for(String value : studentDetails.values()){
-            System.out.println(studentDetails.get(value));
+            System.out.println(value);
         }
     }
     
